@@ -1,0 +1,84 @@
+/* CSS files add styling rules to your content */
+
+
+/* add non moving (fixed) background image*/
+body {
+  background-image: url("https://images6.alphacoders.com/366/thumb-1920-366291.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 1200px;
+}
+
+.container {
+  max-width: 1600px;
+}
+
+h1 {
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 1em;
+  font-size: 3rem;
+}
+
+h2 {
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+h3 {
+  color: #099FAF;
+  text-align: left;
+  font-size: 2rem;
+}
+
+h4 {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+
+/* create a transparent rounded box for the content*/
+.content {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+p {
+  padding-left: 20px;
+  color: white;
+}
+
+#cook {
+  height: 90px;
+  padding: 20px;
+}
+
+
+/* underlying only appears when mouse hovers menu  */
+a:-webkit-any-link {
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+}
+
+a:-webkit-any-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+}
+
+
+
+input[type="button"].button-primary {
+  vertical-align: middle;
+  color: #FFF;
+  margin: auto;
+}

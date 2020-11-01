@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8" />
+    <title>My personnal restaurant guide</title>
+    <meta name="description" content="project assignment database" />
+    <meta name="author" content="Noemie Peruchon de Brochard" />
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="skeleton/normalize.css" />
+    <link rel="stylesheet" href="skeleton/skeleton.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Page title  -->
+      <div class="row">
+        <div class="one column">
+          <img
+            alt="cook"
+            src="https://icon-library.com/images/restaurant-icon-transparent/restaurant-icon-transparent-28.jpg"
+            id="cook"
+          />
+        </div>
+        <div class="ten columns">
+          <h1>
+            My Personnal Restaurant Guide <br />
+            Database
+            <br /><br />
+          </h1>
+        </div>
+      </div>
+
+      <!-- Top page menu -->
+      <div class="row">
+        <div class="three columns">
+          <a href="/index.html#context"><h4>CONTEXT</h4></a>
+        </div>
+        <div class="three columns">
+          <a href="/index.html#solution"><h4>SOLUTION</h4></a>
+        </div>
+        <div class="three columns">
+          <a href="/index.html#code"><h4>HOW TO CODE</h4></a>
+        </div>
+        <div class="three columns">
+          <a href="/demo.html"><h4>DEMO</h4></a>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="row">
+        <div class="twelve columns">
+          <div class="content">
+            
+            
+            
+            <!-- Formulaire -->
+            <form>
+              <div class="row">
+                <div class="six columns">
+                  <label for="name"><h3>Name</h3></label>
+                  <input
+                    class="u-full-width"
+                    placeholder="En aparth&eacute;s"
+                    id="name"
+                  />
+                </div>
+                <div class="six columns">
+                  <label for="address"><h3>Address</h3></label>
+                  <input
+                    class="u-full-width"
+                    placeholder="107 rue Kinet"
+                    id="address"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="six columns">
+                  <label for="city"><h3>City</h3></label>
+                  <input
+                    class="u-full-width"
+                    placeholder="Salon de Provence"
+                    id="city"
+                  />
+                </div>
+                <div class="six columns">
+                  <label for="category"><h3>Category</h3></label>
+                  <select class="u-full-width" id="category">
+                    <option value="italian">Italian</option>
+                    <option value="french">French</option>
+                    <option value="japanese">Japanese</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="indian">Indian</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="six columns">
+                  <label for="price"><h3>Price</h3></label>
+                  <select class="u-full-width" id="price">
+                    <option value="1">Less than 10 &euro;</option>
+                    <option value="2">Between 10 and 20 &euro;</option>
+                    <option value="3">Between 20 and 30 &euro;</option>
+                    <option value="4">More than 30 &euro;</option>
+                  </select>
+                </div>
+                <div class="six columns">
+                  <label for="grade"><h3>Grade</h3></label>
+                  <select class="u-full-width" id="grade">
+                    <option value="1">Excellent</option>
+                    <option value="2">Good</option>
+                    <option value="3">If you have no other choices</option>
+                    <option value="4">Don't even go there</option>
+                  </select>
+                </div>
+              </div>
+
+               <div class="row">
+                 <div class="twelve columns">
+                <input
+                  onclick="saveRestaurant()"
+                  class="button-primary"
+                  type="button"
+                  value="Submit"
+                />
+                 </div>
+              </div>
+              <div class ="row">
+                 <div class="twelve columns">
+                     <p id="saved">  
+                   </p>
+                 </div>
+                 
+                 
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- link to Firebase
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
