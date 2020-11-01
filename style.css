@@ -76,9 +76,31 @@ a:-webkit-any-link:hover {
 }
 
 
-
 input[type="button"].button-primary {
   vertical-align: middle;
   color: #FFF;
   margin: auto;
+}
+
+
+/* modify placeholder colors  */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #BBB;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+  color: #BBB;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
+  color: #BBB;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
 }

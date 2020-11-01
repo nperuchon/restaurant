@@ -43,7 +43,7 @@ function saveRestaurant() {
    });
   
   //Use jquery to inform user data has been saved
-  document.getElementById("saved").innerHTML = 'Thanks for your review, the data has been stored in the Firebase database for '+Rname+' '+Rcategory;
+  document.getElementById("saved").innerHTML = 'Thanks for your review, the data has been stored in the Firebase database for '+Rname+' in category '+Rcategory;
   
 
 }
