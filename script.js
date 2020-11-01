@@ -19,6 +19,8 @@
 firebase.initializeApp(Config);
 firebase.analytics();
 
+
+// Function called when submit button clicked
 function saveRestaurant() {
 //first we get the data from the form field using javascript
   var Rname = document.getElementById("name").value;

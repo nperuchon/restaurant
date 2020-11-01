@@ -31,6 +31,9 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
   </head>
 
+  
+  <!-- Body
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <body>
     <div class="container">
       <!-- Page title  -->
@@ -93,30 +96,49 @@
           <div class="content" id="solution">
             <h3>SOLUTION</h3>
             <p>
-              Why not create your own restoration guide? We can only trust the
+              Why not create your own restaurant guide? We can only trust the
               address when it comes to our own opinions! There are so many
-              cities where we have gone, and so many restaurants that we don't
-              remember the name and address when we went to Italy, or when we
-              went to Paris, or even restaurants in our city where we forget to
-              go when we look for somewhere to eat. With a database system, it
-              would then be possible to note down our own personal notes, on our
-              opinion about a restaurant where we have just eaten. We could then
-              easily access this information on a website, from any device. It
-              would be interesting to classify the restaurants among those we
-              liked and hated, or by specialty: an Italian, Chinese, Japanese,
-              French, Spanish, Breton, ... restaurant. All that will be left to
-              do is to create a "search" section in the site, where you can find
-              certain restaurants in the database according to their location or
-              the type of cuisine for example.
+              cities where we have been, and so many restaurants that we don't
+              remember the name or address when we went to Italy, or when we
+              went to Paris, or even restaurants in our own city where we forget
+              to go when we look for somewhere to eat. With a database system,
+              it would be possible to keep personal notes, on our opinion about
+              a restaurant where we have just eaten.
+              <br />
+              We could then easily access this information on a website, from
+              any device. It would be interesting to classify the restaurants
+              among those we liked and hated, or by specialty: an Italian,
+              Chinese, Japanese, French, Spanish, ... restaurant. All that will
+              be left to do is to create a "search" section in the site, where
+              you can find certain restaurants in the database according to
+              their location or the type of cuisine for example.
             </p>
           </div>
           <div class="content" id="code">
             <h3>HOW TO CODE</h3>
             <p>
-              To create this kind of form, you must first know the concept of a
-              database. <br />
+              In the following lines we will explain the required steps to code
+              this project:
+            </p>
+            <ul>
+              <li>
+                First you need to create a database where to store and retrieve
+                your data.
+              </li>
+              <li>
+                Then you need to create a form to enter the data into the
+                database.
+              </li>
+              <li>
+                Finally you need to save the data from the form into the
+                database.
+              </li>
+            </ul>
+
+            <p>
               <br />
-              <b>What is a database ? </b><br />
+              <b>First create a database</b><br />
+              <u>What is a database ? </u><br />
               A database, allows the storage and retrieval of raw data or
               information, often related to a theme or activity; these can be of
               different natures and more or less related to each other.
@@ -140,10 +162,88 @@
               allowfullscreen
             ></iframe>
             <p>
-              To create a database, you need to create an account on
+              For this project we decided to create a Firebase database, as a
+              free plan is available and it has good API to interact with the
+              data. To create a Firebase database, you first need to create an
+              account on
               <a target="_blank" href="https://console.firebase.google.com/"
                 >Firebase</a
-              >, in order to use it later to retrieve data.
+              >, in order to use it later to save and retrieve data from it.
+
+              <br /><br />
+              <img
+                alt="createdata"
+                src="https://cdn.glitch.com/d2fd3450-7483-4273-861b-aae10322aed5%2Fcreate%20database.JPG?v=1604255733275"
+                class="picture"
+              />
+              <br /><br />
+              <b>Now we create a form</b><br />
+              For this project we created a form which you can access by
+              clicking on the following link
+              <a
+                target="_blank"
+                href="https://assignment-databa-restaurant.glitch.me/demo.html"
+                >Demo</a
+              >
+              (also in the navigation bar). This form allows you to enter the
+              data of a new restaurant. The layout construction has been made
+              simple by using the Skeleton framework, which in particular allows
+              to obtain responsive pages.
+              <br />
+              Within this form each input field has its own id, which will allow
+              us to esily get the data using jquery.<br /><br />
+
+              <img
+                alt="idcity"
+                src="https://cdn.glitch.com/d2fd3450-7483-4273-861b-aae10322aed5%2Flabel%20city.JPG?v=1604256077667"
+                class="picture"
+              /><br />
+
+              <br />
+              <b>Finally save the data</b><br />
+              A button at the bottom of the page launches a javascript function
+              which will read data from the form<br /><br />
+
+              <img
+                alt="idcity"
+                src="https://cdn.glitch.com/d2fd3450-7483-4273-861b-aae10322aed5%2Fvar%20save%20restaurant.JPG?v=1604256289894"
+                class="picture"
+              />
+              <br /><br />
+
+              connect to the database<br /><br />
+
+              <img
+                alt="idcity"
+                src="https://cdn.glitch.com/d2fd3450-7483-4273-861b-aae10322aed5%2Ffirebase%20parameters.JPG?v=1604256401272"
+                class="picture"
+              />
+              <br /><br />
+
+              and save the data inside a new record.<br /><br />
+
+              <img
+                alt="idcity"
+                src="https://cdn.glitch.com/d2fd3450-7483-4273-861b-aae10322aed5%2Fsave%20data.JPG?v=1604256443675"
+                class="picture"
+              />
+              <br /><br />
+
+              Once saved, this is how the data looks inside Firebase.
+              <br /><br />
+
+              <img
+                alt="idcity"
+                src="https://cdn.glitch.com/d2fd3450-7483-4273-861b-aae10322aed5%2Ffirebase%20final.JPG?v=1604256796673"
+                class="picture"
+              />
+              <br /><br />
+
+              <b>What's next</b><br />
+              To go further, we could imagine retrieving the data by city, or
+              grade and display the result.<br />
+              We could also imagine storing the geographic location of each
+              retaurant and disply it on a google map...
             </p>
           </div>
         </div>
